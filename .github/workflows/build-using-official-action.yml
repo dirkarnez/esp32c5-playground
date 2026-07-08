@@ -16,8 +16,6 @@ jobs:
     #   matrix:
     #     python-version: ["3.8", "3.9", "3.10"]
     steps:
-    - uses: actions/checkout@v4
-    
     # - name: Set up Python ${{ matrix.python-version }}
     #   uses: actions/setup-python@v3
     #   with:
@@ -33,16 +31,16 @@ jobs:
     #     idf-build-apps build -p $(pwd) --target esp32
 
     - name: Checkout repo
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
       with:
         submodules: 'recursive'
 
   # this action by default runs "idf.py build"
     - name: esp-idf build
-      uses: espressif/esp-idf-ci-action@v1
+      uses: espressif/esp-idf-ci-action@v1.2.0
       with:
-        esp_idf_version: v4.4
-        target: esp32s2
+        esp_idf_version: latest
+        target: esp32c5
 
     - run: |
         ls -R
