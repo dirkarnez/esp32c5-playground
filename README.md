@@ -1,3 +1,6 @@
 esp32c5-playground
 ==================
 <kbd>[**vscode-web-action**](https://github.com/dirkarnez/esp32c5-playground/actions/workflows/vscode-web.yml)</kbd><br>
+
+### Specification
+- [ESP32-C5 Series Datasheet Version 1.3](https://documentation.espressif.com/esp32-c5_datasheet_en.pdf)
