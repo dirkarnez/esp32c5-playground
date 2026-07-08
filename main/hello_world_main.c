@@ -22,7 +22,7 @@ void app_main()
     /* Print chip information */
     esp_chip_info_t chip_info;
     esp_chip_info(&chip_info);
-    printf("This is ESP32 chip with %d CPU cores, WiFi%s%s, ",
+    printf("This is ESP32 chip %s with %d CPU cores, WiFi%s%s, ", (chip_info.model == CHIP_ESP32C5 ? "ESP32-C5" : "not ESP32-C5" ),
             chip_info.cores,
             (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
             (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
