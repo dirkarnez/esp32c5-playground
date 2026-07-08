@@ -1,0 +1,10 @@
+{
+    "recommendations": [
+        "ms-vscode.cmake-tools",
+        "ms-vscode.cpptools",
+        "ms-vscode.cpptools-themes",
+        "ms-vscode.makefile-tools",
+        "github.vscode-github-actions",
+        "espressif.esp-idf-extension"
+    ]
+}
